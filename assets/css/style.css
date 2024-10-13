@@ -611,8 +611,7 @@ footer {
 
 .hero {
   padding-block-start: calc(var(--section-padding) + 50px);
-  background-color: var(--cultured); /* Change this to any color you prefer */
-  background-image: #252734;/* Optional: gradient background */
+  background-color: var(--cultured); /* Background color */
 }
 
 .hero .container {
@@ -622,19 +621,14 @@ footer {
 
 .hero-banner {
   position: relative;
-  max-width: max-content;
+  max-width: 560px; /* Set a max width for the banner */
   margin-inline: auto;
 }
 
 .hero-banner .w-100 {
-  mask-image: url("../images/profile1.jpg");
-  -webkit-mask-image: url("../images/profile1.jpg");
-  mask-repeat: no-repeat;
-  -webkit-mask-repeat: no-repeat;
-  mask-position: center;
-  -webkit-mask-position: center;
-  mask-size: auto;
-  -webkit-mask-size: auto;
+  width: 100%; /* Set width to 100% for responsive behavior */
+  height: auto; /* Maintain aspect ratio */
+  /* Remove mask properties to check if the image shows */
 }
 
 .hero .shape {
@@ -644,9 +638,13 @@ footer {
   filter: drop-shadow(var(--shadow-2));
 }
 
-.hero-content { text-align: center; }
+.hero-content { 
+  text-align: center; 
+}
 
-.hero .section-text { margin-block: 24px 36px; }
+.hero .section-text { 
+  margin-block: 24px 36px; 
+}
 
 .btn-wrapper {
   display: flex;
@@ -655,6 +653,7 @@ footer {
   align-items: center;
   gap: 12px;
 }
+
 
 /*-----------------------------------*\
  * #SKILLS
